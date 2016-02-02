@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Oh!No!!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (isEquls(a)) {
+                if (isEquals(a)) {
                     Toast.makeText(MainActivity.this, "Yes!you got it!!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Oh!No!!", Toast.LENGTH_SHORT).show();
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private boolean isEquls(int a) {
+    private boolean isEquals(int a) {
         if (a == 3) {
             return true;
         }

@@ -18,7 +18,7 @@ public class HookDemo implements IXposedHookLoadPackage {
         if (loadPackageParam.packageName.equals("com.csonezp.xposeddemo2")) {
             Class clasz = loadPackageParam.classLoader.loadClass("com.csonezp.xposeddemo2.MainActivity");
             //hook MainActivity的 isEquls 方法
-            XposedHelpers.findAndHookMethod(clasz, "isEquls", int.class, new XC_MethodHook() {
+            XposedHelpers.findAndHookMethod(clasz, "isEquals", int.class, new XC_MethodHook() {
                 //这俩个方法任选其一就可以达到效果
                 //方法执行前进行的操作
                 @Override
